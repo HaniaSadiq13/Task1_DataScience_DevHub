@@ -1,21 +1,45 @@
-# Overview
-This Jupyter Notebook explores and visualizes the Iris dataset, a classic dataset in data science. The notebook demonstrates how to load the dataset, inspect its structure, and create visualizations to understand the relationships between different features of the iris flowers.
+# Task 1: Exploring and Visualizing a Simple Dataset
 
-# Contents
-Importing Libraries: The notebook uses pandas, seaborn, and matplotlib for data manipulation and visualization.
+## 🎯 Objective
+Understand how to read, summarize, and visualize a dataset using Python. The **Iris dataset** is used to explore basic data analysis and visualization techniques.
 
-Loading the Dataset: The Iris dataset is loaded using seaborn's built-in dataset loader.
+## 📁 Dataset
+- **Name**: Iris Dataset  
+- **Source**: Built-in via Seaborn (`sns.load_dataset("iris")`)  
+- **Target Variable**: `species` (Setosa, Versicolor, Virginica)
 
-Data Inspection: The notebook displays the shape of the dataset, column names, and the first few rows to give an overview of the data.
+## 🛠️ Libraries Used
+- `pandas` – for data loading and summarization  
+- `seaborn` – for statistical visualizations  
+- `matplotlib.pyplot` – for general plotting  
 
-# Visualizations:
-Scatter Plot: A scatter plot of sepal_length vs. sepal_width, colored by species, to visualize the relationship between these features.
+## 🔍 Steps Performed
 
-Histogram: A histogram of petal_length to show the distribution of petal lengths across the dataset.
+### 1. Load and Inspect the Dataset
+- Loaded the dataset using `sns.load_dataset("iris")`
+- Displayed:
+  - Dataset shape using `.shape`
+  - Column names using `.columns`
+  - First few rows using `.head()`
 
-# Key Insights
-The dataset contains 150 samples with 5 features: sepal_length, sepal_width, petal_length, petal_width, and species.
+### 2. Basic Visualizations
 
-The scatter plot reveals distinct clusters for each iris species, indicating that sepal length and width can help differentiate species.
+#### ✅ Scatter Plot
+- Plotted **sepal_length vs sepal_width**
+- Colored by `species` to analyze relationships between different flower types
 
-The histogram of petal lengths shows a bimodal distribution, suggesting that petal length is a strong feature for species classification.
+#### ✅ Histogram
+- Plotted histogram of **petal_length**
+- Used KDE to show the distribution shape
+
+#### ✅ Box Plot
+- Plotted **sepal_length** across different species
+- Used to identify outliers and understand value spread
+
+## 📌 Key Skills Demonstrated
+- ✅ Dataset loading with Seaborn/Pandas  
+- ✅ Basic dataset inspection using `.shape`, `.columns`, and `.head()`  
+- ✅ Exploratory data visualization:
+  - Scatter plots for correlation
+  - Histograms for distribution
+  - Box plots for spread and outliers
